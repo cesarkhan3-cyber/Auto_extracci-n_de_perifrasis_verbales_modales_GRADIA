@@ -6,3 +6,6 @@ pip install -r requirements.txt
 
 
 python -m spacy download es_core_news_md
+
+
+El archivo hsms.src todavía no está cargado al repositorio. Es un diccionario basado de Freeling. Si es necesario también puede compilar un propio. 
