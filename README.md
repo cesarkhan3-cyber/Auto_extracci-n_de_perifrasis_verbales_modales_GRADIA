@@ -23,3 +23,5 @@ python auto_extraccion v1.py
 
 Se corre automáticamente todo el procesamiento y al final nos salen 3 archivos de .xslx, son (i) frecuencias de las PPVV con concordancias, (ii) los verbos infinitivos detectados y filtrados del corpus y (iii) resultados del análisis colostruccional.  
 
+**Usamos spaCy y el archivo de diccionario para seleccionar y filtrar los verbos infinitivos que van a usar para el analisis colostruccional. En este sentido, se va a encontrar que en uno de los archivos .xslx de resultado "Baseline_strict_candidates_patched" hay varias hojas de trabajo. Donde se indica los verbos que no aproban esta doble seguridad. Si se observa que algunos verbos infinitivos que aparecen en este achivo son fiables, se puede añadirlos manualmente en el "supplement_inf_lemmas.txt", así la próxima vez cuando se corre el script, estos infinitivos aprobarán el filtro.
+
