@@ -7,11 +7,19 @@ Para que funcione el script, hay que preparar una carpeta que se llama "raw_txt_
 *En teoría también hay que preparar archivo de diccionario (en este script es "hsms.src"). Pero este diccionario no está cargado al repositorio. Así que si no lo tiene, durante el procesamiento aparecerá una alerta sobre la precisión. El "hsms.src" está basado de Freeling. Por eso, si es necesario, también puede compilar un propio y luego cambiar un poquito el contenido del script. 
 
 # Instalar las dependencias de Python
+
+
 pip install -r requirements.txt
+
+
 python -m spacy download es_core_news_md
 
 # Manejo y uso
 Cualquier herramienta que apoya al entorno de Python. Corre el script:
+
+
 python auto_extraccion v1.py
+
+
 Se corre automáticamente todo el procesamiento y al final nos salen 3 archivos de .xslx, son (i) frecuencias de las PPVV con concordancias, (ii) los verbos infinitivos detectados y filtrados del corpus y (iii) resultados del análisis colostruccional.  
 
